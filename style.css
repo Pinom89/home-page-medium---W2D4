@@ -1,0 +1,475 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 18px;
+    
+}
+/* inserisco un margin top per non accavallare la nav con il resto del  body in quanto ha position fixed*/
+main{
+    margin-top: 80px;
+    
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,900&display=swap');
+
+/* per una corretta visualizzazione delle classi consiglio di avviare la funzione trova ( ctrl + f utilizzando windows)*/ 
+
+/* mi avevi consigliato di inserire un "_" o "-" o "." ma per mancanza di tempo non sono riuscito a rinominare le classi. 
+Per comprendere meglio le classi segui il consiglio nel commento precedente*/
+
+
+.nav{
+    height: 60px;
+    width: 100%;
+    max-width:1800px;
+    margin: 20px 20px;
+    border-bottom: solid 2px rgb(204, 204, 204);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    Box-shadow: 0 5 5 rgb(173, 170, 170);
+    position: fixed;
+    top: 0;
+    left: 0;
+    
+    
+}
+ 
+.logo{
+    margin-top: 5px;
+    margin-left: 120px;
+    width: 161px;
+    height: 25px;
+
+}
+.topbotton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+    font-size: 1.3em;
+    
+}
+
+.botton1, .botton2, .botton3, .botton4, .botton5{
+    margin: 0 10px;
+}
+
+.botton5{
+    background-color: orangered;
+    font-size: 1em;
+    border: solid orangered 3px;
+    border-radius: 40px;
+    text-align: center;
+    height: 40px;
+    width: 40px;
+    
+}
+
+.botton_a{
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+/* ho racchiuso l'input in un div ma potevo anche farne a meno e inserire direttamente input*/
+
+.botton4 input{
+    border: solid 1.5px black;
+    border-radius: 20px;
+    padding: 4px 10px 4px 10px;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/* fine top bar */
+
+.primary{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 100%;
+    max-width: 1870px;
+    
+}
+
+.sezionesx{ display: flex;
+            flex-direction: column;
+            height: 1800px;
+            max-width: 100%;
+            width: 60%;
+            max-width: 1244px;
+            border-right: solid 2px rgb(204, 204, 204);
+            Box-shadow: 0 5 5 rgb(173, 170, 170);
+            margin: 20px 20px;
+            align-items: center;
+}
+
+.sezionedx{
+            display: flex;
+            flex-direction: column;
+            height: 1800px;
+            max-width: 100%;
+            width: 40%;
+            max-width: 800px;
+            margin: 20px 20px;
+            align-items: center;
+}
+ 
+.article1dx, .article2dx, .article3dx, .article4dx, .article5dx {
+    height: 400px;
+    max-height: 100%;
+    width: 500px;
+    margin: 20px;
+    padding: 0 30px;
+
+}
+
+.article1sx, .article2sx, .article3sx, .article4sx, .article5sx, .article6sx{
+    height:700px;
+    max-height: 100%;
+    width: 850px;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.tabsezionesx{
+    height: 150px;
+    width: 850px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    border-bottom: solid rgb(203, 200, 200) 2px;
+    font-size: 0.8em;
+}
+
+.tabsezsx, .tabsezdx {
+    border-bottom: solid rgb(203, 200, 200) 2px;;
+    color: grey;
+    font-size: 1.1em;
+    margin: 10px;
+    padding-top:10px;
+}
+
+.tabsezsx:hover, .tabsezdx:hover {
+     border-bottom: 5px solid black;
+     color: black;
+     font-weight: 600;
+    }
+        
+
+.imgarticlesx{
+    height: 270px;
+    width: 270px;
+    margin: 10px;
+}
+
+.textartsx{
+    height: 270px;
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.textartsx p{
+        margin: 10px  5px
+}
+
+.imgsx img {
+    border-radius:20px;
+    margin:0 10px;
+    
+}
+
+.diminfonewslogo{
+    margin-left: 50px;
+    margin-right: 10px;
+}
+
+.infonewslogo{
+    margin: 5px;
+}
+
+.infonews2{
+    background-color: rgba(235, 230, 230, 0.947);
+    border-radius: 20px;
+    padding: 5px 10px
+}
+.ptextsx1{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    font:inherit;
+}
+.ptextsx2{
+    font-weight:200;
+    font-size: 16px;
+    }
+
+.ptextsx2, .ptextsx3{
+    color: grey;
+    font-size: 1em;
+}
+.diminfonewslogo{
+    color: black;
+}
+
+.textartsx, h3{
+    margin:10px 4px;
+    font-weight: 900;
+}
+
+/*  inizio sezione destra  */
+
+        /*  ARTICOLO1*/
+
+.article1dx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 40px;
+    border-bottom: solid 2px rgb(204, 204, 204);
+    Box-shadow: 0 5 5 rgb(173, 170, 170);
+    
+}
+.article1{
+    display: flex;
+    flex-direction: row;
+    height: 70px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+    margin-left: 180px;
+}
+
+.logoart1 img{
+    
+    height: auto;
+    width: 100%;
+}
+
+.logoart1 {
+    height: 50px;
+    width: 300px;
+    overflow: hidden;
+    align-items: baseline;
+    margin:20px 0 0 0;
+    color:black;
+    
+}
+
+#logoart1extra{
+    
+    margin-top: 30px;
+    font-size: 1.7em;
+}
+
+.textartcle1{
+    height: 50px;
+    width: 300px;
+    margin: 10px auto;
+    text-align: center;
+    align-items: center;
+}
+
+.buttonart1{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    height: 40px;
+    width: 200px;
+    border: solid 2px rgb(149, 149, 149);
+    border-radius: 40px;
+    padding: 5px 5px 0 5px;
+    margin: 20px auto; 
+}
+
+.buttonart1 .buttonlogo img {
+    height: 30px;
+    width: 90%;
+}
+
+.buttonart1 .buttonlink a {
+    text-decoration: none;
+    cursor: pointer;
+    color: black;
+
+}
+
+.art1link {
+    color:rgb(195, 193, 193);
+    margin: 0 auto 60px auto;
+    cursor: pointer;
+
+}
+
+/*  Articolo 2 lato destro */
+
+.article2dx {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;    
+    
+   
+}
+.artdx2title, .artdx3title{
+    display: block;
+    text-align: left;
+    width: 100%;
+    height: 50px;
+    padding: 0 25px;
+    
+    
+}
+
+.linkart2dx{
+    padding: 10px 30px;
+    background-color: rgba(238, 230, 230, 0.839);
+    border-radius: 20px;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 15px;
+}
+
+.linkart2dx a {
+  cursor: pointer;
+  color: black;
+  text-decoration: none;
+  
+}
+
+/* Articolo 3 lato destro */
+
+.article3dx{
+    display: flex;
+    flex-direction: column;
+   
+}
+
+
+.charticle3dx{
+    display: flex;
+    flex-direction:row;
+    height: 90px;
+    width: 450px;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 25px;
+
+}
+
+.txtart3dx{
+    display: flex;
+    flex-direction: column;
+    height: 80px;
+    width: 300px;
+
+}
+
+.charticle3dximg img{
+  height: 80px;
+  width: 80px;
+  border-radius: 40px;
+}
+
+.txtart3dx .chtxtart3dx {
+   height: 40px;
+   width: 100%;
+   margin: 10px;
+}
+
+.charticle3dxlink a{
+    text-decoration: none;
+    color: black;
+}
+
+.charticle3dxlink{
+    border: solid grey 2px;
+    border-radius: 40px;
+    padding: 5px 15px;
+   
+}
+
+.txtart3dx p{
+    text-overflow: ellipsis;
+    font-size: 0.8em;
+}
+
+
+/* Inizio articolo 4 */
+
+.article4dx{
+    display:flex;
+    flex-direction: column;
+    margin: 10px 30px;
+    
+   
+}
+
+.logart4dx{
+    display: flex;
+    flex-direction: row;
+    height: 60px;
+    width: 400px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.logart4dx div img {
+    height: 40px;
+    width: 40px;
+    border-radius: 30px;
+    padding: 05px;
+}
+
+.date1art4dx, .txtart3dx p{
+    color: rgb(97, 97, 97);
+}
+
+.date1art4dx{
+    font-size: 0.90em;
+}
+
+.h4art4dx, .logart4dx, .h3art4dx, .date1art4dx, .logart4dx{
+    margin:0 20px;
+    font-weight: 900;
+}
+
+/* inizio articolo5 */
+
+.article5dx{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items:flex-start;
+    width: 500px;
+    height: 300px;
+    
+}
+.article5dx .linkart5dx {
+    text-align: center;
+    color: green;
+    margin-bottom: 20px;
+    font-size: 1.1em;
+    margin-left: 20px;
+
+}
+
+.article5dx .linkart5dx, .article5dx .category a{
+    text-decoration:none;
+}
+
+.article5dx .category a{
+    color: rgb(97, 97, 97);
+    font-size: 1.1em;
+    margin: 20px;
+}
+
+
